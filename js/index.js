@@ -1,5 +1,5 @@
 import {fetchData} from "./api.js";
-import {renderCards} from "./helpers.js"
+import {renderCards} from "./render.js"
 
 localStorage.setItem("url", "https://api.pokemontcg.io/v1/cards");
 const fetch_url = localStorage.getItem("url")
