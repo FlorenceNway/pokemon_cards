@@ -7,25 +7,17 @@ body {
 	min-height: 100vh;
 	background-color: #eee;
 }
-
-.cards {
-	list-style: none;
-	padding: 0;
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-	grid-row: auto;
-	grid-gap: 20px;
-}
-
+		
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 350px);
 	grid-gap: 20px;
-	grid-auto-rows: 350px;
-	list-style: none;
-	padding: 0;
+    grid-auto-rows: 420px;
+    list-style: none;
+    padding: 0;
 	justify-content: center;
+	list-style: none;
+	overflow: hidden;
 }
 
 .cards li {
@@ -79,3 +71,18 @@ li:hover .overlay {
 	height: 100%;
 }
 
+.cardName {
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #f7f3f3;
+    /* position: absolute; */
+    /* bottom: -78px; */
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #4b5d31;
+    font-weight: 900;
+    /* margin: 20px 0; */
+    margin-bottom: 20px;
+    border: 6px solid #fde264;
+}
