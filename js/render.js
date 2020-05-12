@@ -5,6 +5,13 @@ export const renderCards = (cards) => {
 	cards.forEach((card) => {
 		const li = document.createElement("li");
 		const image = card.imageUrl
+		let nationalPokedexNumber;
+			
+		if(typeof card.nationalPokedexNumber === 'undefined') {
+			nationalPokedexNumber = 'Unknown'
+		}else {
+			nationalPokedexNumber = card.nationalPokedexNumber 
+		}
 
 		li.innerHTML = `
 			<div class='img'>
@@ -15,7 +22,7 @@ export const renderCards = (cards) => {
 			</div>
 			<div class='overlay'>
 				<div class='text'>
-					<p><b>NationalPokedexNumber: </b> ${card.nationalPokedexNumber}</p>
+					<p><b>National PokedexNumber: </b> ${nationalPokedexNumber}</p>
 					<p><b>Id: </b>${card.id}</p>
 					<p><b>Types: </b> ${card.types}</p>
 					<p><b>Set: </b> ${card.set}</p>
