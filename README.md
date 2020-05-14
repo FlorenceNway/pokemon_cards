@@ -9,4 +9,3 @@ Pokemon cards and sets information are retrieved from the Pokémon TCG API https
 - Get Data from API using fetch (async/await)
 - Render the Pokemon cards
 - Show extra information upon hover the card
-- 
