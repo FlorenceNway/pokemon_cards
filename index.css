@@ -10,20 +10,19 @@ body {
 		
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 350px);
-	grid-gap: 20px;
-    grid-auto-rows: 420px;
-    list-style: none;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 15px;
+    grid-auto-rows: 470px;
     padding: 0;
-	justify-content: center;
-	list-style: none;
-	overflow: hidden;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;;
 }
 
 .cards li {
 	border-radius: 4px;
 	max-width: 400px;
-	height: 350px;
+	height: 345px;
 	margin: 1em;
 	cursor: pointer;
 	position: relative;
@@ -37,6 +36,7 @@ body {
 .img img {
 	height: 100%;
 	width: 100%;
+	
 }
 
 .text {
@@ -83,4 +83,28 @@ li:hover .overlay {
     font-weight: 900;
     margin-top: -10px;
     border: 6px solid #fde264;
+}
+
+
+form {
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input {
+	width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #7c8a14;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    color: #9e3081;
+    background-color: transparent;
+}
+
+input::placeholder {
+	color: #a59d9d;
 }
