@@ -26,7 +26,7 @@ export const renderCards = (cards) => {
 				<div class='text'>
 					<p><b>National PokedexNumber: </b> ${nationalPokedexNumber}</p>
 					<p><b>Id: </b>${card.id}</p>
-					<p><b>Types: </b> ${card.types}</p>
+					<p><b>Types: </b> ${types}</p>
 					<p><b>Set: </b> ${card.set}</p>
 				</div>
 			</div>
