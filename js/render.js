@@ -13,6 +13,7 @@ export const renderCards = (cards) => {
 			types = 'Unknown'
 		}else {
 			nationalPokedexNumber = card.nationalPokedexNumber 
+			types = card.types
 		}
 
 		li.innerHTML = `
