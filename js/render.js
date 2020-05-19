@@ -5,10 +5,12 @@ export const renderCards = (cards) => {
 	cards.forEach((card) => {
 		const li = document.createElement("li");
 		const image = card.imageUrl
-		let nationalPokedexNumber;
+		let nationalPokedexNumber,types;
 			
 		if(typeof card.nationalPokedexNumber === 'undefined') {
 			nationalPokedexNumber = 'Unknown'
+		}if(typeof card.types === 'undefined') {
+			types = 'Unknown'
 		}else {
 			nationalPokedexNumber = card.nationalPokedexNumber 
 		}
