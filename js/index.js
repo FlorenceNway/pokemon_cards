@@ -2,7 +2,9 @@ import {fetchData} from "./api.js";
 import {renderCards} from "./render.js"
 import {filteredPokemon} from "./filter.js"
 
-localStorage.setItem("url", "https://api.pokemontcg.io/v1/cards");
+const url = "https://api.pokemontcg.io/v1/cards"
+
+localStorage.setItem("url", url );
 const fetch_url = localStorage.getItem("url")
 
 const input = document.querySelector('input')
