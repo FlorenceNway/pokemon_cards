@@ -1,5 +1,5 @@
 # POKEMON cards
-link: https://florencenway.github.io/pokemon_cards/
+Website link: https://florencenway.github.io/pokemon_cards/
 
 
 Pokemon cards and sets information are retrieved from the Pokémon TCG API https://api.pokemontcg.io 
